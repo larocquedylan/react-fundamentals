@@ -1,31 +1,23 @@
 <body>
-  <div id="root">
-    <script type="module">
-      // const root = document.createElement('div')
-      // root.setAttribute('className', 'root')
-
-      // document.body.appendChild(root)
-
-      const div = document.createElement('div')
-      div.setAttribute('className', 'container')
-      div.textContent = 'Hello World'
-
-      const root = document.getElementById('root')
-      root.append(div)
-    </script>
-  </div>
+  <div id="root"></div>
+  <script type="module">
+    const div = document.createElement('div')
+    div.setAttribute('className', 'container')
+    div.textContent = 'Hello World'
+    const root = document.getElementById('root')
+    root.append(div)
+  </script>
 </body>
 
 <!-- Extra credit -->
 <!-- <body>
   <script type="module">
-    const root = document.createElement('div')
+    const rootElement = document.createElement('div')
     root.setAttribute('id', 'root')
-
     document.body.appendChild(root)
 
     const div = document.createElement('div')
-    div.setAttribute('className', 'container')
+    div.className = 'container'
     div.textContent = 'Hello World'
 
     root.append(div)
